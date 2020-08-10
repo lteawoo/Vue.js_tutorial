@@ -1,0 +1,18 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+  <ol>
+    <!--
+      이제 각 todo-item에 todo 객체를 제공한다.
+      화면에 나오므로, 각 항목의 컨텐츠는 동적으로 바뀔 수 있다.
+      또한 각 구성 요소에 '키'를 제공해야한다.
+    -->
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-vind:key="item.id"
+    ></todo-item>
+  </ol>
+</div>
+
+<script src="./main1.js"></script>
